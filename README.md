@@ -1,65 +1,47 @@
 # hexo-volantis-snippets README
 
-This is the README for your extension "hexo-volantis-snippets". After writing up a brief description, we recommend including the following sections.
-
+这是一个vscode的代码片段提示以及代码补全插件，用于hexo博客的书写，快速书写hexo标签插件和主题volantis标签插件
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+![](https://raw.githubusercontent.com/lovelyJason/cdn-gallery/master/gh/Snipaste_2023-05-09_21-54-50.png)
 
-For example if there is an image subfolder under your extension project workspace:
+![](https://raw.githubusercontent.com/lovelyJason/cdn-gallery/master/gh/UEL2o.png)
 
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+能快速书写标签插件，避免手写各种复杂的符号，提高写文章的效率
 
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+本插件时为hexo博客的volantis插件定制的，并且是拓展markdown的功能，因此你需要
 
+hexo + volantis + vscode
+
+settings.json:
+```json
+"[markdown]": {
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    }
+}
+```
 ## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+使用本插件之前要配置vscode以下选项，确保markdown中有代码提示喝补全的功能，默认是关闭的
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
+```json
+"[markdown]": {
+    "editor.quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+    }
+}
+```
+### 0.0.1
 
 Initial release of ...
 
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
 ---
 
-## Working with Markdown
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
