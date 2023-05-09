@@ -1,0 +1,259 @@
+{
+  "volantis 所有标签": {
+    "prefix": ["vtag"],
+    "body": [
+      "{% ${1|text,span,p,note,noteblock,checkbox,radio,timeline,link,button,ghcard,site,tab,folding,inlineimage,image,gallery,audio,video,frame,md,swiper,friends,网站卡片标签|}${TM_SELECTED_TEXT} $0 %}"
+    ],
+    "description": [
+      "为了兼容老用户，旧的标签插件在重构之前依然沿用旧的格式，即 command + 空格 作为参数分隔符，而部分新增标签插件是 空格 + 英文竖线 + 空格 ，请注意区分。",
+      "我们也在探索哪种分隔符既简单又不容易引起冲突，所以可能存在多种格式，具体以对应文档描述为准。", 
+      "5.0 版本起临时实验使用英文双冒号 ( :: ) 作为分隔符，之前版本的分隔符写法向下兼容", 
+      "6.0 版本的分隔符最终计划使用 stellar 的分隔符，之前版本的分隔符写法没有兼容计划"
+    ]
+  },
+  "volantis text": {
+    "prefix": "vtag.text",
+    "body": [
+      "{% ${1|u,emp,wavy,del,kbd,psw|}${TM_SELECTED_TEXT} $0 %}"
+    ],
+    "description": [
+      "插入文字"
+    ]
+  },
+  "volantis span": {
+    "prefix": "vtag.span",
+    "body": [
+      "{% span $1::$2 %}"
+    ],
+    "description": [
+      "span标签: \n",
+      "各种颜色的标签，包括：", 
+      "{% span red::红色 %}", 
+      "{% span yellow::黄色 %}", 
+      "{% span green::绿色 %}", 
+      "{% span cyan::青色 %}", 
+      "{% span blue::蓝色 %}", 
+      "{% span gray::灰色 %}。", 
+      "超大号文字：",
+      "{% span center logo large::Volantis %} {% span center small::A Wonderful Theme for Hexo %}"
+    ]
+  },
+  "volantis p": {
+    "prefix": "vtag.p",
+    "body": [
+      "{% p $1::$2 %}"
+    ],
+    "description": [
+      "p标签: \n",
+      "各种颜色的标签，包括：", 
+      "{% span red::红色 %}", 
+      "{% span yellow::黄色 %}", 
+      "{% span green::绿色 %}", 
+      "{% span cyan::青色 %}", 
+      "{% span blue::蓝色 %}", 
+      "{% span gray::灰色 %}。", 
+      "超大号文字：",
+      "{% span center logo large::Volantis %} {% span center small::A Wonderful Theme for Hexo %}"
+    ]
+  },
+  "volantis note": {
+    "prefix": "vtag.note",
+    "body": [
+      "{% note $1::$2 %}"
+    ],
+    "description": [
+      "note标签: \n",
+      "NoteBlock 是 Blockquote 的增强版，",
+      "在左边显示图标，并且可以自定颜色",
+      "而 Note 是 NoteBlock 的简便写法"
+    ]
+  },
+  "volantis noteblock": {
+    "prefix": "vtag.noteblock",
+    "body": [
+      "{% noteblock $1::$2 %}",
+      "$3",
+      "{% endnoteblock %}"
+    ],
+    "description": [
+      "note标签: \n",
+      "{% noteblock 样式参数（可选）::标题（可选） %}",
+      "文本段落",
+      "{% endnoteblock %}"
+    ]
+  },
+  "volantis checkbox": {
+    "prefix": "vtag.checkbox",
+    "body": [
+      "{% checkbox $1::$2 %}"
+    ],
+    "description": [
+      "checkbox标签: \n",
+      "{% checkbox 纯文本测试 %}",
+      "{% checkbox checked::支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}",
+      "{% checkbox red::支持自定义颜色 %}",
+      "{% checkbox green checked::绿色 + 默认选中 %}",
+      "{% checkbox plus green checked::增加 %}",
+      "{% checkbox minus yellow checked::减少 %}",
+      "{% checkbox times red checked::叉 %}"
+    ]
+  },
+  "volantis radio": {
+    "prefix": "vtag.radio",
+    "body": [
+      "{% checkbox $1::$2 %}"
+    ],
+    "description": [
+      "radio标签: \n",
+      "{% radio 纯文本测试 %}",
+      "{% radio checked::支持简单的 [markdown](https://guides.github.com/features/mastering-markdown/) 语法 %}",
+      "{% radio red::支持自定义颜色 %}"
+    ]
+  },
+  "volantis timeline": {
+    "prefix": "vtag.timeline",
+    "body": [
+      "{% ${1:timeline 时间线标题（可选）} %}",
+      "{% ${2:timenode 时间节点（标题）} %}",
+      "${3:正文内容}",
+      "{% endtimenode %}",
+      "{% timenode ${4:时间节点（标题）} %}",
+      "${5:正文内容}",
+      "{% endtimenode %}",
+      "{% endtimeline %}"
+    ],
+    "description": [
+    ]
+  },
+  "volantis link": {
+    "prefix": "vtag.link",
+    "body": [
+      "{% link ${1:如何参与项目}::${2:https://volantis.js.org/contributors/::https://gcore.jsdelivr.net/gh/xaoxuu/cdn-assets@master/logo/256/safari.png} %}"
+    ],
+    "description": [
+    ]
+  },
+  "volantis button": {
+    "prefix": "vtag.button",
+    "body": [
+      ""
+    ],
+    "description": [
+    ]
+  },
+  "volantis ghcard": {
+    "prefix": "vtag.ghcard",
+    "body": [
+      "{% ghcard ${1:用户名/仓库}::${2:其它参数（可选）} %}"
+    ],
+    "description": [
+    ]
+  },
+  "volantis site": {
+    "prefix": "vtag.site",
+    "body": [
+      "{% sites ${1:筛选方式}:${2:组名} %}"
+    ],
+    "description": "网站卡片可以显示网站截图、logo、标题、描述，使用方法和 友链标签 一模一样，唯一的区别是数据文件名称为 sites.yml，可以和友链数据混用，通过分组过滤实现不一样的效果。"
+  },
+  "volantis tab": {
+    "prefix": "vtag.tab",
+    "body": [
+      "{% tabs ${1:页面内不重复的ID} %}",
+      "<!-- tab ${2:栏目1} -->",
+      "${2:内容}",
+      "<!-- endtab -->",
+      "<!-- tab ${3:栏目2} -->",
+      "内容",
+      "<!-- endtab -->",
+      "{% endtabs %}"
+    ],
+    "description": "此插件移植自 NexT #tabs"
+  },
+  "volantis folding": {
+    "prefix": "vtag.folding",
+    "body": [
+      "{% folding ${1:参数（可选）}::${2:标题} %}",
+      "${3:![](https://gcore.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/41F215B9-261F-48B4-80B5-4E86E165259E.jpeg)}",
+      "{% endfolding %}"
+    ],
+    "description": ""
+  },
+  "volantis inlineimage": {
+    "prefix": "vtag.inlineimage",
+    "body": [
+      "{% inlineimage ${1:图片链接}::height=${2:高度（可选）} %}"
+    ],
+    "description": "Inlineimage 标签是一种行内图片标签，可以用来在一段话中间插入表情。"
+  },
+  "volantis image": {
+    "prefix": "vtag.image",
+    "body": [
+      "{% image ${1:链接}::width=${2:宽度（可选）}::height=${3:高度（可选）}::alt=${4:描述（可选）}::bg=${5:占位颜色（可选）} %}"
+    ],
+    "description": "Image 标签是一种针对单个图片应用场景的标签，支持图片描述文字和指定宽度。"
+  },
+  "volantis gallery": {
+    "prefix": "vtag.gallery",
+    "body": [
+      "{% gallery ${1:参数}::${2:列数}::${3:分组} %}",
+      "![图片描述](https://gcore.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/B18FCBB3-67FD-48CC-B4F3-457BA145F17A.jpeg)",
+      "![](https://gcore.jsdelivr.net/gh/volantis-x/cdn-wallpaper/abstract/67239FBB-E15D-4F4F-8EE8-0F1C9F3C4E7C.jpeg)",
+      "{% endgallery %}"
+    ],
+    "description": "Gallery 标签是一种针对一组图片应用场景的标签。"
+  },
+  "volantis audio": {
+    "prefix": "vtag.audio",
+    "body": [
+      "{% audio ${1:音频链接} %}"
+    ],
+    "description": ""
+  },
+  "volantis video": {
+    "prefix": "vtag.video",
+    "body": [
+      "{% video ${1:音频链接} %}"
+    ],
+    "description": ""
+  },
+  "volantis frame": {
+    "prefix": "vtag.frame",
+    "body": [
+      "{% frame 框架名::${1|img,video|}${TM_SELECTED_TEXT}=${2:图片链接}::alt=${3:图片描述（可选）}::part=${4:top/bottom（可选）} %}"
+    ],
+    "description": "这是一个能够将图片或者视频套入设备框架中的标签，可以用来更优雅地显示截图、录屏。"
+  },
+  "volantis md": {
+    "prefix": "vtag.md",
+    "body": [
+      "{% md ${1:https://gcore.jsdelivr.net/gh/volantis-x/hexo-theme-volantis/README.md} %}"
+    ],
+    "description": "在局部渲染外部md文件。"
+  },
+  "volantis swiper": {
+    "prefix": "vtag.swiper",
+    "body": [
+      "{% swiper width:${1|min,max|}${TM_SELECTED_TEXT} %}",
+      "![](https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot11.png)",
+      "![](https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot12.png)",
+      "![](https://gcore.jsdelivr.net/gh/cdn-x/wiki@1.0.2/prohud/screenshot13.png)",
+      "{% endswiper %}"
+    ],
+    "description": "默认一张图片是 50% 宽度，通过设置 width:min 设置为 25% 宽度，width:max 设置为 100% 宽度。"
+  },
+  "volantis friends": {
+    "prefix": "vtag.friends",
+    "body": [
+      "{% friends %}"
+    ],
+    "description": "您可以在任何位置插入友链，支持静态数据和动态数据，静态数据需要写在数据文件中"
+  },
+  "volantis 网站卡片标签": {
+    "prefix": "vtag.网站卡片标签",
+    "body": [
+      "{% sites only:test_demo %}"
+    ],
+    "description": "网站卡片可以显示网站截图、logo、标题、描述，使用方法和友链标签一模一样，唯一的区别是数据文件名称为 sites.yml，可以和友链数据混用，通过分组过滤实现不一样的效果。"
+  },
+}

@@ -1,0 +1,48 @@
+{
+  "name": "hexo-volantis-snippets",
+  "displayName": "Hexo Volantis Snippets",
+  "description": "一个vscode的代码片段提示，智能提示，代码智能补全，类似于html的emmet",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.78.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "markdown",
+        "aliases": [
+          "Markdown",
+          "markdown"
+        ],
+        "extensions": [
+          ".md",
+          ".mkd",
+          ".mdwn",
+          ".mdown",
+          ".markdown",
+          ".markdn",
+          ".mdtxt",
+          ".mdtext",
+          ".workbook"
+        ]
+      }
+    ],
+    "snippets": [
+      {
+        "language": "markdown",
+        "path": "./snippets/snippets.volantis-snippets"
+      },
+      {
+        "language": "markdown",
+        "path": "./snippets/snippets.hexo-snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lovelyJason/hexo-volantis-snippets.git"
+  }
+}

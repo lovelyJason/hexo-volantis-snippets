@@ -1,0 +1,145 @@
+{
+  "hexo 所有标签": {
+    "prefix": ["htag"],
+    "body": [
+      "{% ${1|quote,code,pullquote,jsfiddle,gist,iframe,image,link,include_code,youtube,vimeo,post_link,asset_img,raw,文章摘要和截断|}${TM_SELECTED_TEXT} $0 %}"
+    ],
+    "description": [
+      "标签插件和 Front-matter 中的标签不同，它们是用于在文章中快速插入特定内容的插件。 虽然你可以使用任何格式书写你的文章，但是标签插件永远可用，且语法也都是一致的。 标签插件不应该被包裹在 Markdown 语法中，例如： []({% post_path lorem-ipsum %}) 是不被支持的。"
+    ]
+  },
+  "hexo quote": {
+    "prefix": "htag.quote",
+    "body": [
+      "{% blockquote [author[, source]] [link] [source_link_title] %}",
+      "content",
+      "{% endblockquote %}"
+    ],
+    "description": [
+      "在文章中插入引言，可包含作者、来源和标题。"
+    ]
+  },
+  "hexo code": {
+    "prefix": "htag.code",
+    "body": [
+      "{% codeblock [title] [lang:language] [url] [link text] [additional options] %}",
+      "code snippet",
+      "{% endcodeblock %}"  
+    ],
+    "description": [
+      "在文章中插入代码。"
+    ]
+  },
+  "hexo pullquote": {
+    "prefix": "htag.pullquote",
+    "body": [
+      "{% pullquote [class] %}",
+      "content",
+      "{% endpullquote %}"
+    ],
+    "description": [
+      "反引号代码块：另一种形式的代码块，不同的是它使用三个反引号来包裹。 ``` [language] [title] [url] [link text] code snippet ```"
+    ]
+  },
+  "hexo jsfiddle": {
+    "prefix": "htag.jsfiddle",
+    "body": [
+      "{% jsfiddle shorttag [tabs] [skin] [width] [height] %}"
+    ],
+    "description": [
+      "在文章中嵌入 jsFiddle。"
+    ]
+  },
+  "hexo gist": {
+    "prefix": "htag.gist",
+    "body": [
+      "{% gist gist_id [filename] %}"
+    ],
+    "description": [
+      "在文章中嵌入 Gist。"
+    ]
+  },
+  "hexo iframe": {
+    "prefix": "htag.iframe",
+    "body": [
+      "{% iframe url [width] [height] %}"
+    ],
+    "description": [
+      "在文章中插入 iframe。"
+    ]
+  },
+  "hexo img": {
+    "prefix": "htag.img",
+    "body": [
+      "{% img [class names] /path/to/image [width] [height] '\"title text\" \"alt text\"' %}"
+    ],
+    "description": [
+      "在文章中插入指定大小的图片。"
+    ]
+  },
+  "hexo link": {
+    "prefix": "htag.link",
+    "body": [
+      "{% link text url [external] [title] %}"
+    ],
+    "description": [
+      "在文章中插入链接，并自动给外部链接添加 target=\"_blank\" 属性。"
+    ]
+  },
+  "hexo include_code": {
+    "prefix": "htag.include_code",
+    "body": [
+      "{% include_code [title] [lang:language] [from:line] [to:line] path/to/file %}"
+    ],
+    "description": [
+      "插入 source/downloads/code 文件夹内的代码文件。source/downloads/code 不是固定的，取决于你在配置文件中 code_dir 的配置。"
+    ]
+  },
+  "hexo youtube": {
+    "prefix": "htag.youtube",
+    "body": [
+      "{% youtube video_id [type] [cookie] %}"
+    ],
+    "description": [
+      "在文章中插入 Youtube 视频。"
+    ]
+  },
+  "hexo vimeo": {
+    "prefix": "htag.vimeo",
+    "body": [
+      "{% vimeo video_id %}"
+    ],
+    "description": [
+      "在文章中插入 Vimeo 视频。"
+    ]
+  },
+  "hexo asset_img": {
+    "prefix": "htag.asset_img",
+    "body": [
+      "{% asset_img [class names] slug [width] [height] [title text [alt text]] %}"
+    ],
+    "description": [
+      "嵌入图片"
+    ]
+  },
+  "hexo raw": {
+    "prefix": "htag.raw",
+    "body": [
+      "{% raw %}",
+      "${1:content}",
+      "{% endraw %}"
+    ],
+    "description": [
+      "如果您想在文章中插入 Swig 标签，可以尝试使用 Raw 标签，以免发生解析异常。"
+    ]
+  },
+  "hexo 文章摘要和截断": {
+    "prefix": "htag.文章摘要和截断",
+    "body": [
+      "<!-- more -->"
+    ],
+    "description": [
+      "在文章中使用 <!-- more -->，那么 <!-- more --> 之前的文字将会被视为摘要。首页中将只出现这部分文字，同时这部分文字也会出现在正文之中。"
+    ]
+  }
+}
