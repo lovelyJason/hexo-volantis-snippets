@@ -11,24 +11,15 @@
 
 ## Requirements
 
-本插件时为hexo博客的volantis插件定制的，并且是拓展markdown的功能，因此你需要
+本插件是为hexo博客的volantis插件定制的，并且是拓展markdown的功能，因此你需要
 
 hexo + volantis + vscode
 
-settings.json:
-```json
-"[markdown]": {
-    "editor.quickSuggestions": {
-        "comments": "on",
-        "strings": "on",
-        "other": "on"
-    }
-}
-```
 ## Extension Settings
 
-使用本插件之前要配置vscode以下选项，确保markdown中有代码提示喝补全的功能，默认是关闭的
+使用本插件之前要配置vscode以下选项，确保markdown中有代码提示和补全的功能，默认是关闭的
 
+settings.json
 ```json
 "[markdown]": {
     "editor.quickSuggestions": {

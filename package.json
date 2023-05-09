@@ -44,5 +44,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/lovelyJason/hexo-volantis-snippets.git"
-  }
+  },
+  "publisher": "jasonhuang"
 }
