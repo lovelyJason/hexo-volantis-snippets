@@ -13,7 +13,7 @@
 
 本插件是为hexo博客的volantis插件定制的，并且是拓展markdown的功能，因此你需要
 
-hexo + volantis + vscode
+hexo + volantis + vscode + markdown
 
 ## Extension Settings
 
@@ -29,6 +29,16 @@ settings.json
     }
 }
 ```
+
+如何设置？
+
+windows下`ctrl + shift + p`换出命令面板，输入`Open User Settings`, 会打开一个JSON文件,在文件末尾追加以上内容即可
+
+
+## Usage
+
+`htag`列出所有hexo标签以供选择， `htag [tagname]`直接插入指定标签， 如`htag iframe`向文章中插入iframe
+`vtag`列出所有volantis标签以供选择， `vtag [tagname]`直接插入指定标签， 如`vtag btn`向文章中插入按钮
 ### 0.0.1
 
 Initial release of ...

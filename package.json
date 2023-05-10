@@ -2,7 +2,8 @@
   "name": "hexo-volantis-snippets",
   "displayName": "Hexo Volantis Snippets",
   "description": "一个vscode的代码片段提示，智能提示，代码智能补全，类似于html的emmet",
-  "version": "0.0.1",
+  "icon": "images/logo.png",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.78.0"
   },
@@ -33,7 +34,7 @@
     "snippets": [
       {
         "language": "markdown",
-        "path": "./snippets/snippets.volantis-snippets"
+        "path": "./snippets/snippets.volantis-snippets.json"
       },
       {
         "language": "markdown",
