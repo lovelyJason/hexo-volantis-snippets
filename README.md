@@ -37,8 +37,17 @@ windows下`ctrl + shift + p`换出命令面板，输入`Open User Settings`, 会
 
 ## Usage
 
+在vscode应用商店搜索hexo-volantis-snippets
+
+<img width="1792" alt="image" src="https://github.com/user-attachments/assets/0813086a-e406-4ac7-8b0d-6a008913d683">
+
+
 `htag`列出所有hexo标签以供选择， `htag [tagname]`直接插入指定标签， 如`htag iframe`向文章中插入iframe
 `vtag`列出所有volantis标签以供选择， `vtag [tagname]`直接插入指定标签， 如`vtag btn`向文章中插入按钮
+
+演示视频：
+http://cdn.qdovo.com/img/post/20230510-0624-08.6242257.mp4
+
 ### 0.0.1
 
 Initial release of ...
